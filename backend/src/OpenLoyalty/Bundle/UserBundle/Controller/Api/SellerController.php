@@ -34,7 +34,7 @@ use Symfony\Component\HttpFoundation\Response;
 class SellerController extends FOSRestController
 {
     /**
-     * Method will return list of sellers
+     * Method will return list of sellers.
      *
      * @Route(name="oloy.user.seller.list", path="/seller")
      * @Method("GET")
@@ -84,7 +84,7 @@ class SellerController extends FOSRestController
     }
 
     /**
-     * Method will return seller details
+     * Method will return seller details.
      *
      * @Route(name="oloy.user.seller.get", path="/seller/{seller}")
      * @Method("GET")
@@ -108,7 +108,7 @@ class SellerController extends FOSRestController
     }
 
     /**
-     * Method allows to register new seller
+     * Method allows to register new seller.
      *
      * @param Request $request
      * @Route(name="oloy.user.seller.register", path="/seller/register")
@@ -164,7 +164,7 @@ class SellerController extends FOSRestController
     }
 
     /**
-     * Method allows to activate seller
+     * Method allows to activate seller.
      *
      * @param SellerDetails $seller
      *
@@ -198,7 +198,7 @@ class SellerController extends FOSRestController
     }
 
     /**
-     * Method allows to deactivate seller
+     * Method allows to deactivate seller.
      *
      * @param SellerDetails $seller
      *
@@ -231,7 +231,7 @@ class SellerController extends FOSRestController
     }
 
     /**
-     * Method allows to delete seller
+     * Method allows to delete seller.
      *
      * @param SellerDetails $seller
      *
@@ -266,7 +266,7 @@ class SellerController extends FOSRestController
     }
 
     /**
-     * Method allows to update seller details
+     * Method allows to update seller details.
      *
      * @param Request       $request
      * @param SellerDetails $seller

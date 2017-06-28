@@ -39,7 +39,7 @@ use Symfony\Component\HttpFoundation\Response;
 class TransactionController extends FOSRestController
 {
     /**
-     * Method will return complete list of all transactions
+     * Method will return complete list of all transactions.
      *
      * @Route(name="oloy.transaction.list", path="/transaction")
      * @Route(name="oloy.transaction.customer.list", path="/customer/transaction")
@@ -108,7 +108,7 @@ class TransactionController extends FOSRestController
     }
 
     /**
-     * Method will return logged in customer transactions
+     * Method will return logged in customer transactions.
      *
      * @Route(name="oloy.transaction.seller.list_customer_transactions", path="/seller/transaction/customer/{customer}")
      * @Security("is_granted('LIST_CUSTOMER_TRANSACTIONS', customer)")
@@ -159,7 +159,8 @@ class TransactionController extends FOSRestController
     }
 
     /**
-     * Method will return transactions with provided document number
+     * Method will return transactions with provided document number.
+     *
      * @Route(name="oloy.transaction.seller.list_by_document_number", path="/seller/transaction/{documentNumber}")
      * @Method("GET")
      *
@@ -195,7 +196,7 @@ class TransactionController extends FOSRestController
     }
 
     /**
-     * Method wil return available labels
+     * Method wil return available labels.
      *
      * @Route(name="oloy.transaction.get_item_labels", path="/transaction/item/labels")
      * @Method("GET")
@@ -220,7 +221,7 @@ class TransactionController extends FOSRestController
     }
 
     /**
-     * Method will return transaction details
+     * Method will return transaction details.
      *
      * @Route(name="oloy.transaction.get", path="/transaction/{transaction}")
      * @Route(name="oloy.transaction.customer.get", path="/customer/transaction/{transaction}")
@@ -241,7 +242,7 @@ class TransactionController extends FOSRestController
     }
 
     /**
-     * Method allows to register new transaction in system
+     * Method allows to register new transaction in system.
      *
      * @Route(name="oloy.transaction.register", path="/transaction")
      * @Method("POST")
@@ -301,7 +302,8 @@ class TransactionController extends FOSRestController
 
     /**
      * Method will return number of points which can be obtained after registering such transaction.<br/>
-     * It will not change anything in the system
+     * It will not change anything in the system.
+     *
      * @Route(name="oloy.transaction.simulate", path="/transaction/simulate")
      * @Method("POST")
      * @ApiDoc(
@@ -349,7 +351,7 @@ class TransactionController extends FOSRestController
     }
 
     /**
-     * Method allows to assign customer to specyfic transaction
+     * Method allows to assign customer to specyfic transaction.
      *
      * @Route(name="oloy.transaction.assign_customer", path="/admin/transaction/customer/assign")
      * @Route(name="oloy.transaction.pos.assign_customer", path="/pos/transaction/customer/assign")

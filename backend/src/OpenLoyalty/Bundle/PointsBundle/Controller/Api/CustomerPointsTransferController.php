@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Request;
 class CustomerPointsTransferController extends FOSRestController
 {
     /**
-     * List of all logged in customer points transfer
+     * List of all logged in customer points transfer.
      *
      * @Route(name="oloy.points.transfer.customer.list", path="/customer/points/transfer")
      * @Method("GET")

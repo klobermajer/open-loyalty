@@ -30,7 +30,7 @@ use Symfony\Component\HttpFoundation\Request;
 class AdminController extends FOSRestController
 {
     /**
-     * List all admins
+     * List all admins.
      *
      * @Route(name="oloy.user.list", path="/admin")
      * @Method("GET")
@@ -73,7 +73,7 @@ class AdminController extends FOSRestController
     }
 
     /**
-     * Method allows to update admin data
+     * Method allows to update admin data.
      *
      * @param Request    $request
      * @param Admin|null $admin
@@ -129,7 +129,7 @@ class AdminController extends FOSRestController
     }
 
     /**
-     * Method allows to create new admin
+     * Method allows to create new admin.
      *
      * @param Request $request
      *
@@ -172,7 +172,7 @@ class AdminController extends FOSRestController
     }
 
     /**
-     * Method will return admin details
+     * Method will return admin details.
      *
      * @param Admin|null $admin
      *

@@ -23,7 +23,8 @@ use Symfony\Component\HttpFoundation\Request;
 class ChangePasswordController extends FOSRestController
 {
     /**
-     * Change logged user password
+     * Change logged user password.
+     *
      * @param Request $request
      * @Route(name="oloy.user.change_password", path="/admin/password/change")
      * @Route(name="oloy.user.change_password_customer", path="/customer/password/change")

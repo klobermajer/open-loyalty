@@ -38,7 +38,7 @@ use OpenLoyalty\Bundle\EarningRuleBundle\Model\EarningRule as BundleEarningRule;
 class EarningRuleController extends FOSRestController
 {
     /**
-     * Method allow to create new earning rule
+     * Method allow to create new earning rule.
      *
      * @Route(name="oloy.earning_rule.create", path="/earningRule")
      * @Method("POST")
@@ -89,7 +89,7 @@ class EarningRuleController extends FOSRestController
     }
 
     /**
-     * Edit existing earning rule
+     * Edit existing earning rule.
      *
      * @Route(name="oloy.earning_rule.edit", path="/earningRule/{earningRule}")
      * @Method("PUT")
@@ -151,7 +151,7 @@ class EarningRuleController extends FOSRestController
     }
 
     /**
-     * Method will return earning rule details
+     * Method will return earning rule details.
      *
      * @Route(name="oloy.earning_rule.get", path="/earningRule/{earningRule}")
      * @Route(name="oloy.earning_rule.seller.get", path="/seller/earningRule/{earningRule}")
@@ -176,7 +176,7 @@ class EarningRuleController extends FOSRestController
     }
 
     /**
-     * Method will return a complete list of earning rules
+     * Method will return a complete list of earning rules.
      *
      * @Route(name="oloy.earning_rule.list", path="/earningRule")
      * @Route(name="oloy.earning_rule.seller.list", path="/seller/earningRule")
@@ -235,7 +235,7 @@ class EarningRuleController extends FOSRestController
     }
 
     /**
-     * Activate or deactivate earning rule
+     * Activate or deactivate earning rule.
      *
      * @Route(name="oloy.earning_rule.activate", path="/earningRule/{earningRule}/activate")
      * @Method("POST")
@@ -277,7 +277,8 @@ class EarningRuleController extends FOSRestController
 
     /**
      * This method allows to use a custom event earning rule.<br/>
-     * All you need to do is call this api endpoint with proper parameters
+     * All you need to do is call this api endpoint with proper parameters.
+     *
      * @Route(name="oloy.earning_rule.report_custom_event", path="/{version}/earnRule/{eventName}/customer/{customer}", requirements={"version": "v1"}, defaults={"version":"v1"})
      * @Method("POST")
      *

@@ -21,6 +21,7 @@ class ResetPasswordController extends FOSRestController
 {
     /**
      * Purpose of this method is to provide "Forgot password" functionality.<br/>Invoking this method will send message tot he user with password reset url.
+     *
      * @param Request $request
      * @Route(name="oloy.user.reset.request", path="/password/reset/request")
      * @Method("POST")
@@ -68,7 +69,7 @@ class ResetPasswordController extends FOSRestController
     }
 
     /**
-     * Method allows to set new password after reset password requesting
+     * Method allows to set new password after reset password requesting.
      *
      * @param Request $request
      *

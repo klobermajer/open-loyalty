@@ -38,7 +38,7 @@ use Symfony\Component\HttpFoundation\Request;
 class CustomerCampaignsController extends FOSRestController
 {
     /**
-     * Get all campaigns available for logged in customer
+     * Get all campaigns available for logged in customer.
      *
      * @Route(name="oloy.campaign.customer.available", path="/customer/campaign/available")
      * @Method("GET")
@@ -106,7 +106,7 @@ class CustomerCampaignsController extends FOSRestController
     }
 
     /**
-     * Get all campaigns bought by logged in customer
+     * Get all campaigns bought by logged in customer.
      *
      * @Route(name="oloy.campaign.customer.bought", path="/customer/campaign/bought")
      * @Method("GET")
@@ -173,7 +173,8 @@ class CustomerCampaignsController extends FOSRestController
     }
 
     /**
-     * Buy campaign by logged in customer
+     * Buy campaign by logged in customer.
+     *
      * @Route(name="oloy.campaign.customer.buy", path="/customer/campaign/{campaign}/buy")
      * @Method("POST")
      * @Security("is_granted('BUY', campaign)")
@@ -183,10 +184,7 @@ class CustomerCampaignsController extends FOSRestController
      *     section="Customer Campaign",
      *     statusCodes={
      *       200="Returned when successful",
-     *       400="With error 'No coupons left' returned when campaign cannot be bought because of lack of coupons.
-    With error 'Not enough points' returned when campaign cannot be bought because of not enough points on customer account.
-    With empty error returned when campaign limits exceeded.",
-     *       404="Returned when customer or campaign not found"
+     *       400="With error 'No coupons left' returned when campaign cannot be bought because of lack of coupons. With error 'Not enough points' returned when campaign cannot be bought because of not enough points on customer account. With empty error returned when campaign limits exceeded."
      *     }
      * )
      *
@@ -250,7 +248,7 @@ class CustomerCampaignsController extends FOSRestController
     }
 
     /**
-     * Mark specific coupon as used/unused by customer
+     * Mark specific coupon as used/unused by customer.
      *
      * @Route(name="oloy.campaign.customer.coupon_usage", path="/customer/campaign/{campaign}/coupon/{coupon}")
      * @Method("POST")

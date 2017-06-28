@@ -17,7 +17,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 class CustomerEarningRuleController extends FOSRestController
 {
     /**
-     * Method will return all active earning rules
+     * Method will return all active earning rules.
      *
      * @Route(name="oloy.earning_rule.customer.list", path="/customer/earningRule")
      * @Method("GET")

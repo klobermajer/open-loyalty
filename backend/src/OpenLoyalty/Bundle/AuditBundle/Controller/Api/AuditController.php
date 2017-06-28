@@ -22,7 +22,7 @@ use Symfony\Component\HttpFoundation\Request;
 class AuditController extends FOSRestController
 {
     /**
-     * Get audit log
+     * Get audit log.
      *
      * Method will return actions log.
      *

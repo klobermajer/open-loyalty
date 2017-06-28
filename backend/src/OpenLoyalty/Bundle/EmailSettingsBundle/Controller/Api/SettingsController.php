@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\Response;
 class SettingsController extends FOSRestController
 {
     /**
-     * Method will return complete list of available email settings
+     * Method will return complete list of available email settings.
      *
      * @Route(name="oloy.email_settings.list", path="/settings/emails")
      * @Method("GET")
@@ -45,7 +45,7 @@ class SettingsController extends FOSRestController
     }
 
     /**
-     * Method will return details of particular email setting
+     * Method will return details of particular email setting.
      *
      * @Route(name="oloy.email_settings.get", path="/settings/emails/{emailId}")
      * @Method("GET")

@@ -29,7 +29,7 @@ use Symfony\Component\HttpFoundation\Response;
 class SettingsController extends FOSRestController
 {
     /**
-     * Method allow to update system settings
+     * Method allow to update system settings.
      *
      * @Route(name="oloy.settings.edit", path="/settings")
      * @Method("POST")
@@ -67,7 +67,7 @@ class SettingsController extends FOSRestController
     }
 
     /**
-     * Method will return all system settings
+     * Method will return all system settings.
      *
      * @Route(name="oloy.settings.get", path="/settings")
      * @Method("GET")
@@ -89,7 +89,7 @@ class SettingsController extends FOSRestController
     }
 
     /**
-     * Method will return current translations
+     * Method will return current translations.
      *
      * @Route(name="oloy.settings.translations", path="/translations")
      * @Method("GET")
@@ -110,7 +110,7 @@ class SettingsController extends FOSRestController
     }
 
     /**
-     * Method will return list of available translations
+     * Method will return list of available translations.
      *
      * @Route(name="oloy.settings.translations_list", path="/admin/translations")
      * @Method("GET")
@@ -136,7 +136,8 @@ class SettingsController extends FOSRestController
     }
 
     /**
-     * Method will return translations<br/> You must provide translation key, available keys can be obtained by /admin/translations endpoint
+     * Method will return translations<br/> You must provide translation key, available keys can be obtained by /admin/translations endpoint.
+     *
      * @Route(name="oloy.settings.translations_get", path="/admin/translations/{key}")
      * @Method("GET")
      * @Security("is_granted('EDIT_SETTINGS')")
@@ -157,7 +158,7 @@ class SettingsController extends FOSRestController
     }
 
     /**
-     * Method allows to update specific translations
+     * Method allows to update specific translations.
      *
      * @Route(name="oloy.settings.translations_update", path="/admin/translations/{key}")
      * @Method("PUT")
@@ -195,7 +196,8 @@ class SettingsController extends FOSRestController
     }
 
     /**
-     * Method allows to create new translations
+     * Method allows to create new translations.
+     *
      * @Route(name="oloy.settings.translations_create", path="/admin/translations")
      * @Method("POST")
      * @Security("is_granted('EDIT_SETTINGS')")
@@ -230,7 +232,7 @@ class SettingsController extends FOSRestController
     }
 
     /**
-     * Method will return some data needed for specific select fields
+     * Method will return some data needed for specific select fields.
      *
      * @Route(name="oloy.settings.get_form_choices", path="/settings/choices/{type}")
      * @Method("GET")

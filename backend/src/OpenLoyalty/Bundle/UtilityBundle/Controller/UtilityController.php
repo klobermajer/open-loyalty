@@ -24,7 +24,7 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 class UtilityController extends FOSRestController
 {
     /**
-     * Method will return csv with customers assigned to specific segment
+     * Method will return csv with customers assigned to specific segment.
      *
      * @Route(name="oloy.csv.segment.generate", path="/csv/segment/{segment}")
      * @Method("GET")
@@ -50,7 +50,7 @@ class UtilityController extends FOSRestController
     }
 
     /**
-     * Method will return csv with customers assigned to specific level
+     * Method will return csv with customers assigned to specific level.
      *
      * @Route(name="oloy.csv.level.generate", path="/csv/level/{level}")
      * @Method("GET")
@@ -58,6 +58,7 @@ class UtilityController extends FOSRestController
      * @ApiDoc(
      *     section="Utility"
      * )
+     *
      * @param Request $request
      * @param Level   $level
      *

@@ -28,7 +28,7 @@ use Symfony\Component\HttpFoundation\Response;
 class LevelController extends FOSRestController
 {
     /**
-     * Method allows to create new level
+     * Method allows to create new level.
      *
      * @param Request $request
      * @Route(name="oloy.level.create", path="/level/create")
@@ -73,7 +73,7 @@ class LevelController extends FOSRestController
     }
 
     /**
-     * Method allows to edit existing level
+     * Method allows to edit existing level.
      *
      * @param Request $request
      * @param Level   $level
@@ -121,7 +121,7 @@ class LevelController extends FOSRestController
     }
 
     /**
-     * Method will return level details
+     * Method will return level details.
      *
      * @Route(name="oloy.level.get", path="/level/{level}")
      * @Route(name="oloy.level.seller.get", path="/seller/level/{level}")
@@ -150,7 +150,7 @@ class LevelController extends FOSRestController
     }
 
     /**
-     * Method will return list of customers assigned to this level
+     * Method will return list of customers assigned to this level.
      *
      * @Route(name="oloy.level.get_customers", path="/level/{level}/customers")
      * @Method("GET")
@@ -197,7 +197,7 @@ class LevelController extends FOSRestController
     }
 
     /**
-     * Method will return complete list od levels
+     * Method will return complete list od levels.
      *
      * @Route(name="oloy.level.list", path="/level")
      * @Route(name="oloy.level.seller.list", path="/seller/level")
@@ -243,7 +243,7 @@ class LevelController extends FOSRestController
     }
 
     /**
-     * Method allows to activate or deactivate level
+     * Method allows to activate or deactivate level.
      *
      * @Route(name="oloy.level.activate", path="/level/{level}/activate")
      * @Method("POST")

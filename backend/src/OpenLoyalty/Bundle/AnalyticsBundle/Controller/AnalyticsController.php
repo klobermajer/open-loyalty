@@ -19,7 +19,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 class AnalyticsController extends FOSRestController
 {
     /**
-     * Get transactions statistics
+     * Get transactions statistics.
      *
      * Method will return information about total transactions count, total amount, etc.
      *
@@ -56,7 +56,7 @@ class AnalyticsController extends FOSRestController
     }
 
     /**
-     * Get points statistics
+     * Get points statistics.
      *
      * Method will return information about total count of spending points operations and total amount of used points.
      *
@@ -88,7 +88,7 @@ class AnalyticsController extends FOSRestController
     }
 
     /**
-     * Get customers statistics
+     * Get customers statistics.
      *
      * Method will return information about total count of customers registered in system.
      *

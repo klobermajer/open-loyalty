@@ -27,7 +27,7 @@ use Symfony\Component\HttpFoundation\Response;
 class PosController extends FOSRestController
 {
     /**
-     * Method allows to create new POS
+     * Method allows to create new POS.
      *
      * @Route(name="oloy.pos.create", path="/pos")
      * @Security("is_granted('CREATE_POS')")
@@ -72,7 +72,7 @@ class PosController extends FOSRestController
     }
 
     /**
-     * Method allows to update POS data
+     * Method allows to update POS data.
      *
      * @Route(name="oloy.pos.update", path="/pos/{pos}")
      * @Method("PUT")
@@ -119,7 +119,7 @@ class PosController extends FOSRestController
     }
 
     /**
-     * Method will return POS details
+     * Method will return POS details.
      *
      * @Route(name="oloy.pos.get", path="/pos/{pos}")
      * @Route(name="oloy.pos.seller.get", path="/seller/pos/{pos}")
@@ -141,7 +141,8 @@ class PosController extends FOSRestController
 
     /**
      * Method will return POS details. <br/>
-     * You need to provide POS identifier
+     * You need to provide POS identifier.
+     *
      * @Route(name="oloy.pos.get_by_identifier", path="/pos/identifier/{pos}")
      * @Method("GET")
      * @Security("is_granted('VIEW', pos)")
@@ -162,7 +163,7 @@ class PosController extends FOSRestController
     }
 
     /**
-     * Method will return complete list of POS
+     * Method will return complete list of POS.
      *
      * @Route(name="oloy.pos.list", path="/pos")
      * @Route(name="oloy.pos.seller.list", path="/seller/pos")

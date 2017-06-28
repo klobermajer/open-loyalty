@@ -46,7 +46,7 @@ use Symfony\Component\HttpFoundation\Response;
 class CampaignController extends FOSRestController
 {
     /**
-     * Create new campaign
+     * Create new campaign.
      *
      * @Route(name="oloy.campaign.create", path="/campaign")
      * @Method("POST")
@@ -93,7 +93,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Add photo to campaign
+     * Add photo to campaign.
      *
      * @Route(name="oloy.campaign.add_photo", path="/campaign/{campaign}/photo")
      * @Method("POST")
@@ -131,7 +131,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Remove photo from campaign
+     * Remove photo from campaign.
      *
      * @Route(name="oloy.campaign.remove_photo", path="/campaign/{campaign}/photo")
      * @Method("DELETE")
@@ -158,7 +158,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Get campaign photo
+     * Get campaign photo.
      *
      * @Route(name="oloy.campaign.get_photo", path="/campaign/{campaign}/photo")
      * @Method("GET")
@@ -192,7 +192,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Edit campaign
+     * Edit campaign.
      *
      * @Route(name="oloy.campaign.edit", path="/campaign/{campaign}")
      * @Method("PUT")
@@ -238,7 +238,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Change campaign state action to active or inactive
+     * Change campaign state action to active or inactive.
      *
      * @Route(name="oloy.campaign.change_state", path="/campaign/{campaign}/{active}", requirements={"active":"active|inactive"})
      * @Method("POST")
@@ -271,7 +271,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Get all campaigns
+     * Get all campaigns.
      *
      * @Route(name="oloy.campaign.list", path="/campaign")
      * @Security("is_granted('LIST_ALL_CAMPAIGNS')")
@@ -323,7 +323,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Get all visible campaigns
+     * Get all visible campaigns.
      *
      * @Route(name="oloy.campaign.seller.list", path="/seller/campaign")
      * @Security("is_granted('LIST_ALL_VISIBLE_CAMPAIGNS')")
@@ -375,7 +375,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Get single campaign details
+     * Get single campaign details.
      *
      * @Route(name="oloy.campaign.get", path="/campaign/{campaign}")
      * @Route(name="oloy.campaign.seller.get", path="/seller/campaign/{campaign}")
@@ -397,7 +397,8 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Get customers who for whom this campaign is visible
+     * Get customers who for whom this campaign is visible.
+     *
      * @Route(name="oloy.campaign.get_customers_visible_for_campaign", path="/campaign/{campaign}/customers/visible")
      * @Method("GET")
      * @Security("is_granted('LIST_ALL_CAMPAIGNS')")
@@ -444,7 +445,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * List all campaigns that can be baught by this customer
+     * List all campaigns that can be baught by this customer.
      *
      * @Route(name="oloy.campaign.admin.customer.available", path="/admin/customer/{customer}/campaign/available")
      * @Route(name="oloy.campaign.seller.customer.available", path="/seller/customer/{customer}/campaign/available")
@@ -513,7 +514,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Buy campaign
+     * Buy campaign.
      *
      * @Route(name="oloy.campaign.buy", path="/admin/customer/{customer}/campaign/{campaign}/buy")
      * @Route(name="oloy.campaign.seller.buy", path="/seller/customer/{customer}/campaign/{campaign}/buy")
@@ -525,10 +526,7 @@ class CampaignController extends FOSRestController
      *     section="Campaign",
      *     statusCodes={
      *       200="Returned when successful",
-     *       400="With error 'No coupons left' returned when campaign cannot be bought because of lack of coupons.
-                With error 'Not enough points' returned when campaign cannot be bought because of not enough points on customer account.
-                With empty error returned when campaign limits exceeded.",
-     *       404="Returned when customer or campaign not found"
+     *       400="With error 'No coupons left' returned when campaign cannot be bought because of lack of coupons. With error 'Not enough points' returned when campaign cannot be bought because of not enough points on customer account. With empty error returned when campaign limits exceeded."
      *     }
      * )
      *
@@ -589,7 +587,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Get all campaigns bought by customer
+     * Get all campaigns bought by customer.
      *
      * @Route(name="oloy.campaign.admin.customer.bought", path="/admin/customer/{customer}/campaign/bought")
      * @Route(name="oloy.campaign.seller.customer.bought", path="/seller/customer/{customer}/campaign/bought")
@@ -660,7 +658,7 @@ class CampaignController extends FOSRestController
     }
 
     /**
-     * Mark specific coupon as used/unused by customer
+     * Mark specific coupon as used/unused by customer.
      *
      * @Route(name="oloy.campaign.admin.customer.coupon_usage", path="/admin/customer/{customer}/campaign/{campaign}/coupon/{coupon}")
      * @Method("POST")

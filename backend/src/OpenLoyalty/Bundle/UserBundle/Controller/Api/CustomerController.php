@@ -46,7 +46,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class CustomerController extends FOSRestController
 {
     /**
-     * Method will return list of all customers
+     * Method will return list of all customers.
      *
      * @Route(name="oloy.customer.list", path="/customer")
      * @Method("GET")
@@ -133,7 +133,8 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method will return customer details
+     * Method will return customer details.
+     *
      * @Route(name="oloy.customer.get", path="/customer/{customer}")
      * @Method("GET")
      * @Security("is_granted('VIEW', customer)")
@@ -177,7 +178,8 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method will return number of customer registrations per day in last 30 days
+     * Method will return number of customer registrations per day in last 30 days.
+     *
      * @Route(name="oloy.customer.get_customers_registrations_in_time", path="/customer/registrations/daily")
      * @Method("GET")
      *
@@ -230,25 +232,25 @@ class CustomerController extends FOSRestController
     /**
      * Method will return customer status<br/>
      * [Example response]<br/>
-     * <pre>
+     * <pre>.
      *
      {
-        "firstName": "Jane",
-        "lastName": "Doe",
-        "customerId": "00000000-0000-474c-b092-b0dd880c07e2",
-        "points": 206,
-        "usedPoints": 100,
-        "expiredPoints": 0,
-        "level": "14.00%",
-        "levelName": "level0",
-        "nextLevel": "15.00%",
-        "nextLevelName": "level1",
-        "transactionsAmountWithoutDeliveryCosts": 3,
-        "transactionsAmountToNextLevel": 17,
-        "averageTransactionsAmount": "3.00",
-        "transactionsCount": 1,
-        "transactionsAmount": 3,
-        "currency": "eur",
+     "firstName": "Jane",
+     "lastName": "Doe",
+     "customerId": "00000000-0000-474c-b092-b0dd880c07e2",
+     "points": 206,
+     "usedPoints": 100,
+     "expiredPoints": 0,
+     "level": "14.00%",
+     "levelName": "level0",
+     "nextLevel": "15.00%",
+     "nextLevelName": "level1",
+     "transactionsAmountWithoutDeliveryCosts": 3,
+     "transactionsAmountToNextLevel": 17,
+     "averageTransactionsAmount": "3.00",
+     "transactionsCount": 1,
+     "transactionsAmount": 3,
+     "currency": "eur",
      }
      * </pre>
      *
@@ -276,7 +278,7 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method allows to register new customer
+     * Method allows to register new customer.
      *
      * @param Request $request
      * @Route(name="oloy.customer.register_customer", path="/customer/register")
@@ -363,7 +365,7 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method allow to register by myself
+     * Method allow to register by myself.
      *
      * @param Request $request
      * @Route(name="oloy.customer.self_register_customer", path="/customer/self_register")
@@ -412,7 +414,7 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method allows to update customer details
+     * Method allows to update customer details.
      *
      * @param Request         $request
      * @param CustomerDetails $customer
@@ -485,7 +487,7 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method allows to assign level to customer
+     * Method allows to assign level to customer.
      *
      * @param Request         $request
      * @param CustomerDetails $customer
@@ -520,7 +522,7 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method allows to assign POS to customer
+     * Method allows to assign POS to customer.
      *
      * @param Request         $request
      * @param CustomerDetails $customer
@@ -556,7 +558,8 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method allows to deactivate customer<br/>Inactive customer will not be able to log in
+     * Method allows to deactivate customer<br/>Inactive customer will not be able to log in.
+     *
      * @Route(name="oloy.customer.deactivate_customer", path="/admin/customer/{customer}/deactivate")
      * @Route(name="oloy.customer.seller.deactivate_customer", path="/seller/customer/{customer}/deactivate")
      * @Method("POST")
@@ -587,7 +590,7 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method allows to activate customer
+     * Method allows to activate customer.
      *
      * @Route(name="oloy.customer.ativate_customer", path="/admin/customer/{customer}/activate")
      * @Route(name="oloy.customer.seller.activate_customer", path="/seller/customer/{customer}/activate")
@@ -619,7 +622,7 @@ class CustomerController extends FOSRestController
     }
 
     /**
-     * Method allows to activate by activation token
+     * Method allows to activate by activation token.
      *
      * @Route(name="oloy.customer.ativate_account", path="/customer/activate/{token}")
      * @Method("POST")

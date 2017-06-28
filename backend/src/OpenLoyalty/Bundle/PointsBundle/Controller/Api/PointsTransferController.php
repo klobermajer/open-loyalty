@@ -38,7 +38,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class PointsTransferController extends FOSRestController
 {
     /**
-     * List of all points transfers
+     * List of all points transfers.
      *
      * @Route(name="oloy.points.transfer.list", path="/points/transfer")
      * @Route(name="oloy.points.transfer.seller.list", path="/seller/points/transfer")
@@ -93,7 +93,7 @@ class PointsTransferController extends FOSRestController
     }
 
     /**
-     * Method allows to add points to customer
+     * Method allows to add points to customer.
      *
      * @param Request $request
      * @Route(name="oloy.points.transfer.add", path="/points/transfer/add")
@@ -154,7 +154,7 @@ class PointsTransferController extends FOSRestController
     }
 
     /**
-     * Method allows to spend customer points
+     * Method allows to spend customer points.
      *
      * @param Request $request
      * @Route(name="oloy.points.transfer.spend", path="/points/transfer/spend")
@@ -223,7 +223,7 @@ class PointsTransferController extends FOSRestController
     }
 
     /**
-     * Cancel specific points transfer
+     * Cancel specific points transfer.
      *
      * @param PointsTransferDetails $transfer
      *

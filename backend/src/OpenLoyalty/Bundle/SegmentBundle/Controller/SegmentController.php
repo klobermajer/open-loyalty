@@ -35,7 +35,7 @@ use Symfony\Component\Form\FormError;
 class SegmentController extends FOSRestController
 {
     /**
-     * Method allows to create new segment
+     * Method allows to create new segment.
      *
      * @Route(name="oloy.segment.create", path="/segment")
      * @Method("POST")
@@ -94,7 +94,7 @@ class SegmentController extends FOSRestController
     }
 
     /**
-     * Method allows to update segment data
+     * Method allows to update segment data.
      *
      * @Route(name="oloy.segment.update", path="/segment/{segment}")
      * @Method("PUT")
@@ -158,7 +158,7 @@ class SegmentController extends FOSRestController
     }
 
     /**
-     * Method allows to activate
+     * Method allows to activate.
      *
      * @Route(name="oloy.segment.activate", path="/segment/{segment}/activate")
      * @Method("POST")
@@ -183,7 +183,7 @@ class SegmentController extends FOSRestController
     }
 
     /**
-     * Method allows to deactivate segment
+     * Method allows to deactivate segment.
      *
      * @Route(name="oloy.segment.deactivate", path="/segment/{segment}/deactivate")
      * @Method("POST")
@@ -208,7 +208,7 @@ class SegmentController extends FOSRestController
     }
 
     /**
-     * Method allows to delete segment
+     * Method allows to delete segment.
      *
      * @Route(name="oloy.segment.delete", path="/segment/{segment}")
      * @Method("DELETE")
@@ -233,7 +233,7 @@ class SegmentController extends FOSRestController
     }
 
     /**
-     * Method will return segment details
+     * Method will return segment details.
      *
      * @Route(name="oloy.segment.get", path="/segment/{segment}")
      * @Method("GET")
@@ -253,7 +253,7 @@ class SegmentController extends FOSRestController
     }
 
     /**
-     * Method will return customers assigned to this segment
+     * Method will return customers assigned to this segment.
      *
      * @Route(name="oloy.segment.get_customers", path="/segment/{segment}/customers")
      * @Method("GET")
@@ -331,7 +331,7 @@ class SegmentController extends FOSRestController
     }
 
     /**
-     * Method will return segments list
+     * Method will return segments list.
      *
      * @Route(name="oloy.segment.list", path="/segment")
      * @Method("GET")
